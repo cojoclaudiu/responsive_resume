@@ -1,0 +1,97 @@
+.contentBox {
+  margin-top: var(--marginTop);
+}
+
+.contentItem {
+  background-color: white;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--borderRadius);
+  text-align: justify;
+  padding: 10px;
+}
+
+.categoryHeading {
+  font-size: 2rem;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.item {
+  background-color: #f1f2f1;
+  /* border: 1px solid var(--borderColor); */
+  border-radius: 0 var(--borderRadius) var(--borderRadius) var(--borderRadius);
+  margin: 10px;
+  padding: 10px;
+}
+
+.externalLink {
+  display: inline-flex;
+  align-items: center;
+}
+
+.gridTbl {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 10px;
+  align-items: center;
+  border-radius: var(--borderRadius);
+  border: 1px solid var(--borderColor);
+}
+
+.gridCol1 {
+  justify-self: center;
+}
+
+.gridCol2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  background-color: #f1f2f1;
+  text-align: left;
+  border-left: 1px solid var(--borderColor);
+  padding-left: 5px;
+}
+
+.gridCol2 > div {
+  padding: 3px;
+}
+.gridCol2 > div:not(:last-child) {
+  border-bottom: 1px solid var(--borderColor);
+}
+
+.yearTo {
+  font-size: 1.2rem;
+  color: #656665;
+}
+
+.yearTo::before {
+  display: inline-flex;
+  content: '\00b7';
+  font-size: 2rem;
+  padding: 0 5px;
+}
+
+/* LABELS */
+.aPS {
+  background-color: #001e35;
+  color: #30a8fe;
+  border-radius: var(--borderRadius);
+  padding: 5px;
+  font-weight: bold;
+}
+.contentBox {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+@media print, only screen and (max-width: 540px) {
+  .gridTbl {
+    grid-template-columns: 1fr;
+  }
+
+  .gridCol1 {
+    padding: 10px;
+  }
+}

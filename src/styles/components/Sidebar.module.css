@@ -1,0 +1,57 @@
+.sidebarBox {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: max-content max-content max-content;
+  gap: 10px 0;
+}
+
+.sidebarPrimaryButton {
+  width: 100%;
+  padding: 8px 0;
+  font-weight: bold;
+  font-size: 14px;
+
+  color: white;
+  background-color: var(--primaryBtnColor);
+  cursor: pointer;
+  border: 0;
+  border-radius: var(--borderRadius);
+}
+
+/* Display button on window.print() */
+
+@media print {
+  .buttonBox {
+    display: none;
+  }
+
+  .sidebarBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--borderColor);
+    border-radius: var(--borderRadius);
+    text-align: justify;
+    height: max-content;
+  }
+
+  .footerSidebar {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .sidebarBox {
+    background-color: white;
+    border: 1px solid var(--borderColor);
+    border-radius: var(--borderRadius);
+    text-align: justify;
+    padding: 10px;
+  }
+
+  .footerSidebar {
+    display: none;
+  }
+}

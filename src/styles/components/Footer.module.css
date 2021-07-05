@@ -1,0 +1,15 @@
+.footer {
+  background-color: white;
+  font-size: 1.3rem;
+  border: 1px solid var(--borderColor);
+  border-radius: var(--borderRadius);
+  margin: var(--marginTop) 0;
+  text-align: center;
+  padding: 10px;
+}
+
+@media print {
+  .footer {
+    display: none;
+  }
+}

@@ -1,0 +1,12 @@
+:root {
+  --mainWidth: 38.375em;
+  --sidebarWidth: 18.3125em;
+  --paddingXL: 1.75em;
+  --marginTop: 10px;
+  --borderRadius: 3px;
+
+  /* Colors */
+  --borderColor: #dadbda;
+  --onlineGreen: #1e8e3e;
+  --primaryBtnColor: rgb(0, 149, 246) ;
+}

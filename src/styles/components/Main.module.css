@@ -1,0 +1,5 @@
+.mainGrid {
+  display: grid;
+  grid-template-rows: auto;
+  gap: var(--marginTop);
+}

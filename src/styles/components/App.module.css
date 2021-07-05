@@ -1,0 +1,23 @@
+.mainWrapper {
+  display: grid;
+  grid-template-columns: var(--mainWidth) var(--sidebarWidth);
+  column-gap: var(--paddingXL);
+  max-width: calc(935px + var(--paddingXL));
+
+  margin-top: var(--marginTop);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media print {
+  .mainWrapper {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .mainWrapper {
+    grid-template-columns: 1fr;
+    max-width: var(--mainWidth);
+  }
+}
